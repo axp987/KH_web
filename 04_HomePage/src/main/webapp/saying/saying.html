@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	// 로그인 페이지를 보여주는 함수
+	function login_window() {
+		// 형식) window.open("파일경로명", "창이름", "가로폭/세로높이")
+		window.open("../login/login.html", "로그인",
+				"width=380px, height=250px");
+	}
+	
+	// 회원 페이지를 보여주는 함수
+	function join_window() {
+		// 형식) window.open("파일경로명", "창이름", "")
+		window.open("../join/join.html", "회원가입", "width=380px, height=250px");
+	}
+	
+	
+</script>
+</head>
+<body>
+	<div id="container">
+		<header id="head"> <!-- 웹 문서의 상단 영역 -->
+			<div id="Login">
+				<a href="../saying/saying.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end -->
+			<hgroup>
+			<!-- 제목과 부제목을 그룹으로 묶어주는 역할을 하는 태그 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+				<li><a href="../birth/birth.html">탄 생</a></li>
+				<li><a href="../writing/writing.html">저 서</a></li>
+				<li><a href="../philosophy/philosophy.html">철 학</a></li>
+				<li><a href="../index.html">소 개</a></li>
+			</ul>
+		</nav>
+		<!-- 구역 나누기: section -->
+		<!-- 웹 문서의 영역 설정 태그. 
+		section태그는 여러 번 사용이 가능함 -->
+		<section id="content">
+		<h2>"명 언"</h2>
+			<article>
+				<p>1. 분노 때문에 불같이 화를 내는 사람은 분노 때문에 창백해지는 사람보다 두렵지 않다.</p>
+				<p>2. 진리는 오류의 반대이다</p>
+				<p>3. 결단을 내리지 않는 것이야말로 최대의 해악이다</p>
+				<p>4. 좋은 책을 읽는 것은 지난 몇 세기 동안 나타난</p>
+				<p>가장 훌륭한 사람들과 대화를 나누는 것과 같다가 있습니다</p>
+				<p>5. 남을 증오하는 감정이 얼굴의 주름살이 되고 남을 원망하는 마음이 고운 얼굴을 추악하게 한다.</p>
+				<p>6. 감정은 늘 신체에 반사적으로 나타난다, 할 수 없다고</p>
+				<p>생각하면 절대로 할 수 없다 결국 그런 생각으로 어떤 일도 불가능하다</p>
+				<p>7. 사랑의 감정은 사람의 모습까지 따뜻하게 보이도록 한다</p>
+				<p>8. 맥박도 고르고 평소보다 기운차게 움직인다</p>
+				<p>9. 위장의 활동을 도와 소화가 잘 되도록 해준다. 따라서 사랑의 감정은 무엇보다 건강에 좋다</p>
+			</article>
+			<div class="imggogo">
+				<img src="../images/book3.jpg" width="400" height="500" alt="데카르트 명언">
+			</div>	
+		</section>
+		
+		<!--  문서의 보조 내용(광고, 알림) -->
+		<aside id="sidebar">
+			<h3>저서 구입</h3>
+			<p>저서 구입을 원하시는 분들은 010-1111-1234로 연락주시기 바랍니다.</p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 임정훈 / 저술가, 번역가</p>
+			<address>E-MAIL: jhenun@empas.com</address>
+			<p>Copyright &copy; All right reserved</p>
+		</footer>
+	</div> <!-- id="container end -->
+</body>
+</html>

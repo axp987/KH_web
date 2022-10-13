@@ -1,0 +1,133 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+body {
+    background-image: url('../image/back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 770px;
+}
+
+#button-form {
+    text-align: center;
+    padding-left: 150px;
+    font-family: 'Jeju Myeongjo', serif;/*웹 폰트 지정*/
+		color: orange;
+}
+
+#clock {
+    color: blueviolet;
+    font-family: 'Dongle', sans-serif;
+    font-size: 35px;
+    font-weight:bold;
+    text-align: center;
+}
+
+/* 이름 */
+.name {
+    color: blueviolet;
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.b-form {
+    width: 250px;
+    height: 450px;
+    margin: 15px;
+
+    -webkit-transition: width 1s, height 1s;
+	transition: width 1s, height 1s;
+}
+
+
+.b-form:hover {
+    width: 320px;
+    height: 520px;
+}
+
+.c1 {
+    margin-left: 250px;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.font-form {
+    color: blue;
+    font-size: 17px;
+    
+}
+
+
+/* End */
+#container {
+    text-align: center;
+    display:block;
+    padding-top: 20%;
+}
+
+#content article p {
+	text-align: justify; /* 글자를 양쪽으로 균등하게 정렬 */	
+}
+
+#sidebar {
+	float: center;
+}
+
+
+#foot {
+	padding: 5px 0;
+	color: blue;
+	text-align: center;
+	font-size: 15px;
+	clear: both;
+}
+
+
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .t{
+    animation: blink-effect 1.5s step-end infinite;
+}
+
+.t{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid blueviolet;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.b-form {
+    border: solid 3px orange;
+    -webkit-animation-name: movingPara;
+    -webkit-animation-duration: 1.3s;
+    animation-name: movingPara;
+    animation-duration: 1.3s;
+}
+@-webkit-keyframes movingPara {
+    from { margin-left: 200%; }
+    to { margin-left: 0%; }
+}
+@keyframes movingPara {
+    from { margin-left: 200%; }
+    to { margin-left: 0%; }
+}
+
+.git-form {
+    width: 45px; 
+    height: 45px;
+    -webkit-transition: width 1s, height 1s;
+	transition: width 1s, height 1s;
+}
+
+.git-form:hover {
+    width: 200px;
+    height: 200px;
+}

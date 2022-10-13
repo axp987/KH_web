@@ -1,0 +1,74 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+body {
+    background-image: url('../image/back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 830px;
+
+    
+}
+
+
+.font-form {
+    color: blueviolet;
+    font-family: 'Dongle', sans-serif;
+    font-size: 35px;
+    font-weight:bold;
+    text-decoration: none;
+
+    margin: 50px 0px;
+}
+
+.font-form:hover {
+    color: #eaf818;
+}
+
+.img {
+    width: 150px;
+    height: 70px;
+    
+}
+
+.back {
+    float: right;
+    background-color: burlywood;
+}
+
+#gns-div-form {
+    padding-left: 50px;
+    
+}
+
+.gns-img {
+    width: 400px;
+    height: 300px;
+}
+
+.i {
+    width: 300px;
+    height: 400px;
+}
+
+.font-port {
+    color: blueviolet;
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.font-form {
+    -webkit-animation-name: movingPara;
+    -webkit-animation-duration: 1.5s;
+    animation-name: movingPara;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes movingPara {
+    from { margin-left: 100%; }
+    to { margin-left: 0%; }
+}
+@keyframes movingPara {
+    from { margin-left: 100%; }
+    to { margin-left: 0%; }
+}

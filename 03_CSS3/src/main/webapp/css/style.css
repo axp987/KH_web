@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/*
+	[문제] 1. 글자 크기: 20px
+		2. 글꼴(글자체): 궁서체
+		3. 글자 굵기: bold
+*/
+
+p {
+	color: blue; /* 글자 색상 */
+	text-align: center; /* 글자 위치 */
+	font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+}
+

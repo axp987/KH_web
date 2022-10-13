@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	// 로그인 페이지를 보여주는 함수
+	function login_window() {
+		// 형식) window.open("파일경로명", "창이름", "가로폭/세로높이")
+		window.open("../login/login.html", "로그인",
+				"width=380px, height=250px");
+	}
+	
+	// 회원 페이지를 보여주는 함수
+	function join_window() {
+		// 형식) window.open("파일경로명", "창이름", "")
+		window.open("../join/join.html", "회원가입", "width=380px, height=250px");
+	}
+	
+	
+</script>
+</head>
+<body>
+	<div id="container">
+		<header id="head"> <!-- 웹 문서의 상단 영역 -->
+			<div id="Login">
+				<a href="../saying/saying.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end -->
+			<hgroup>
+			<!-- 제목과 부제목을 그룹으로 묶어주는 역할을 하는 태그 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+				<li><a href="../index.html">소 개</a></li>
+				<li><a href="../writing/writing.html">저 서</a></li>
+				<li><a href="../philosophy/philosophy.html">철 학</a></li>
+				<li><a href="../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+		<!-- 구역 나누기: section -->
+		<!-- 웹 문서의 영역 설정 태그. 
+		section태그는 여러 번 사용이 가능함 -->
+		<section id="content">
+		<h2>"탄 생"</h2>
+				<p>데카르트는 1596년 3월 31일 투렌 지방(Touraine)의 투르 인근에 있는 소도시 라에의 법관 귀족 가문에서 태어났다.</p>
+				<p>그의 아버지는 브르타뉴 지역 렌의 시의원이었으며, 22 어머니는 그가 태어난 지 14달이 못 되어 세상을 떠났다. 이후 그는 외할머니 밑에서 자랐고, 어린 시절 몸이 무척 허약했다고 한다.</p> 
+				<p>가톨릭 집안에서 자랐지만 그가 태어난 장소는 위그노 교세가 힘을 떨치던 푸아투 지방이었다.</p>
+				<div>
+					<img src="../images/birth01.jpg" width="300" height="400" alt="데카르트 초상화">
+				</div>	
+	</section>
+		
+		<!--  문서의 보조 내용(광고, 알림) -->
+		<aside id="sidebar">
+			<h3>저서 구입</h3>
+			<p>저서 구입을 원하시는 분들은 010-1111-1234로 연락주시기 바랍니다.</p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 임정훈 / 저술가, 번역가</p>
+			<address>E-MAIL: jhenun@empas.com</address>
+			<p>Copyright &copy; All right reserved</p>
+		</footer>
+	</div> <!-- id="container end -->
+</body>
+</html>

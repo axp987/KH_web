@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 홈페이지</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	// 로그인 페이지를 보여주는 함수
+	function login_window() {
+		// 형식) window.open("파일경로명", "창이름", "가로폭/세로높이")
+		window.open("../login/login.html", "로그인",
+				"width=380px, height=250px");
+	}
+	
+	// 회원 페이지를 보여주는 함수
+	function join_window() {
+		// 형식) window.open("파일경로명", "창이름", "")
+		window.open("../join/join.html", "회원가입", "width=380px, height=250px");
+	}
+	
+	
+</script>
+</head>
+<body>
+	<div id="container">
+		<header id="head"> <!-- 웹 문서의 상단 영역 -->
+			<div id="Login">
+				<a href="../saying/saying.html">홈</a>
+				<a href="#" onclick="login_window()">로그인</a>
+				<a href="#" onclick="join_window()">회원가입</a>
+			</div> <!-- id="login" end -->
+			<hgroup>
+			<!-- 제목과 부제목을 그룹으로 묶어주는 역할을 하는 태그 -->
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+		
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id="navi">
+			<ul>
+				<li><a href="../birth/birth.html">탄 생</a></li>
+				<li><a href="../index.html">소 개</a></li>
+				<li><a href="../philosophy/philosophy.html">철 학</a></li>
+				<li><a href="../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+		<!-- 구역 나누기: section -->
+		<!-- 웹 문서의 영역 설정 태그. 
+		section태그는 여러 번 사용이 가능함 -->
+		<section id="content">
+			<h2>데카르트 저서</h2>
+			<!-- section 영역의 본 -->
+			<article class="art">
+				<p>주요 저서<p>
+				<p>《음악개론》: Compendium Musicae, 1618년<p>
+				<p>《정신지도규칙》: Regulae ad directionem ingenii(Rules for the Direction of the Mind), 1626-1628년<p>
+				<p>한국어 번역본: 《방법서설》의 〈정신지도규칙〉, 이현복 옮김, 문예출판사, 2019년, ISBN 978-89-310-1133-3<p>
+				<p>《자연의 빛에 의한 진리 탐구》: La recherche de la vérité par la lumière naturelle, 1630–1631년<p>
+				<p>한국어 번역본: 《성찰》의 〈자연의 빛에 의한 진리 탐구〉, 이현복 옮김, 문예출판사 1997, ISBN 978-89-310-1133-3<p>
+				<p>《인간, 태아발생론》: L'Homme(Man), 1630-1633년, 1662년 출판<p>
+				<p>《세계론》: Le Monde(The World), 1630-1633년, 1664년 출판<p>
+				<p>《방법서설》: Discours de la méthode, 1637년<p>
+				<p>한국어 번역본: 《방법서설》의 〈방법서설〉, 이현복 옮김, 문예출판사, 2019년, ISBN 978-89-310-1133-3<p>
+				<p>《기하학》: La Géométrie(Geometry), 1637년<p>
+				<p>《성찰》: Meditationes de prima philosophia, 1641년<p>
+				<p>한국어 번역본: 《성찰》, 양진호, 옮김, 책세상출판사 2011, ISBN 89-7013-790-4<p>
+				<p>한국어 번역본: 《성찰》의 〈제일철학에 관한 성찰〉, 이현복 옮김, 문예출판사 1997년, ISBN 978-89-310-0326-0<p>
+				<p>《철학의 원리》: Principia philosophiae 1644년<p>
+				<p>한국어 번역본: 《철학의 원리》, 원석영 옮김, 아카넷, 2002년, ISBN 89-89103-83-5<p>
+				<p>《어떤 비방문에 대한 주석》: Notae in programma, 1647년<p>
+				<p>한국어 번역본: 《성찰》의 〈프로그램에 대한 주석〉, 이현복 옮김, 문예출판사 1997년, ISBN 978-89-310-0326-0<p>
+				<p>《인체의 구조에 관하여》: La description du corps humain, 1648년<p>
+				<p>《뷔르만과의 대화》: Responsiones Renati Des Cartes(Conversation with Burman), 1648년<p>
+				<p>정념론》: Les passions de l'âme, 1649년<p>
+				<p>한국어 번역본: 《정념론》, 김선영 옮김, 문예출판사, 2013년 ISBN 978-89-310-0739-8<p>
+				<p>《음악에 관한 소고》: Musicae Compendium(Instruction in Music), 1656년, 사후 출판<p>
+				<p>《서한집》: Correspondance, 1657년, 클라우데 클레르슬리에(Claude Clerselier)에 의해 출판<p>
+			</article>
+		</section>
+		
+		<!--  문서의 보조 내용(광고, 알림) -->
+		<aside id="sidebar">
+			<h3>저서 구입</h3>
+			<p>저서 구입을 원하시는 분들은 010-1111-1234로 연락주시기 바랍니다.</p>
+			<img src="../images/book1.png" width="130" height="160">
+			<img src="../images/book2.png" width="130" height="160">
+		</aside>
+		
+		
+		<!-- 문서의 하단 내용 -->
+		<footer id="foot">
+			<p>글 : 임정훈 / 저술가, 번역가</p>
+			<address>E-MAIL: jhenun@empas.com</address>
+			<p>Copyright &copy; All right reserved</p>
+		</footer>
+	</div> <!-- id="container end -->
+</body>
+</html>

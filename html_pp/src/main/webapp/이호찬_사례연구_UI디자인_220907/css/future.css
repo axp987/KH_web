@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+body {
+    background-image: url('../image/back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 830px;
+}
+
+.ko-form {
+    color: blueviolet;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.ko-form a:hover {
+    color: yellow;
+}
+
+.img {
+    width: 300px;
+}
+

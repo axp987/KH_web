@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+ <style>
+        .container{ 
+            width: 100%; 
+            height: 100vh; 
+            display: -webkit-box; 
+            display: -moz-box;
+            display: -ms-flexbox; 
+            display: flex; 
+ 
+            -webkit-box-align: center; 
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; /* 수직 정렬 */
+ 
+            -webkit-box-pack: center;
+            -moz-box-pack: center; 
+            -ms-flex-pack: center; 
+            justify-content: center; /* 수평 정렬 */
+        } 
+        
+        .login{
+           	color: aqua;
+        }
+ 		
+ 		body {
+    		background-image: url(images/image1.jpeg);
+    		background-repeat: no-repeat;
+    		background-size: cover;
+		}
+		
+		#btnSubmit{
+        	width:70px;
+       	 	margin:auto;
+       	 	display:block;
+       	 	background-color:skyblue;
+    	}
+    	
+    	#btnSearch{
+        	width:70px;
+       	 	margin:auto;
+       	 	display:block;
+       	 	background-color:skyblue;
+    	}
+    	
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="login">
+			<font color="white">ID:&nbsp;&nbsp;</font><input type="text" size="22" />
+			<br>
+			<font color="white">PW:</font><input type="password" size="22" />
+			<br>
+			<input type="submit" value="로그인" id="btnSubmit" /> 
+			<input type="submit" value="회원가입" id="btnSearch" onclick="window.open('join.html')" /> 
+		</div>
+	
+	</div>
+</body>
+</html>
